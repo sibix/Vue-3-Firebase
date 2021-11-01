@@ -5,14 +5,18 @@
       <h2>{{ job.title }}</h2>
     </router-link>
     <div class= "products">
-      ID -  {{ jobs.records[0].id }} <br>
-      Status - {{ jobs.records[0].fields.Status }} <br>
-      Price- {{ jobs.records[0].fields.Price }} <br>
-      Product Name - {{ jobs.records[0].fields.ProductName }} <br>
-      Quantity Available -  {{ jobs.records[0].fields.QuantityAvailable }} <br>
-      Offer price -  {{ jobs.records[0].fields.Offer-Price }} <br>
-      craeted Time - {{ jobs.records[0].createdTime }} <br>
-      Length - {{ jobs.records.length }} <br>
+      ID -  {{ jobs.records[0].id }} <br><br>
+      Status - {{ jobs.records[0].fields.Status }} <br><br>
+      Price- {{ jobs.records[0].fields.Price }} <br><br>
+      Product Name - {{ jobs.records[0].fields.ProductName }} <br><br>
+      Quantity Available -  {{ jobs.records[0].fields.QuantityAvailable }} <br><br>
+      Product Description -  {{ jobs.records[0].fields.ProductDescription }} <br><br>
+      Offer price -  {{ jobs.records[0].fields.OfferPrice }} <br><br>
+      created Time - {{ jobs.records[0].createdTime }} <br><br>
+      Length - {{ jobs.records.length }} <br><br>
+      No of Images - {{ jobs.records[0].fields.PoductImages.length}} <br><br>
+      Image 1 - {{ jobs.records[0].fields.PoductImages[0].url}} <br><br>
+      Image 2 - {{ jobs.records[0].fields.PoductImages[1].url}} <br><br>
     </div>
   </div>
 </template>
